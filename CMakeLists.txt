@@ -149,13 +149,13 @@ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
         install(
                 EXPORT platform_pdm_proto_wrapperTargets
-                DESTINATION ${CMAKE_INSTALL_PREFIX}/share/carbon-pdmprotowrapper
+                DESTINATION share/carbon-pdmprotowrapper
                 FILE carbon-pdmprotowrapper.cmake
         )
 
         install(
                 FILES carbon-pdmprotowrapperConfig.cmake
-                DESTINATION ${CMAKE_INSTALL_PREFIX}/share/carbon-pdmprotowrapper
+                DESTINATION share/carbon-pdmprotowrapper
         )
     endif()
 endif()
