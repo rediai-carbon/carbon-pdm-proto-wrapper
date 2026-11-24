@@ -2,6 +2,9 @@
 
 include(CMakeFindDependencyMacro)
 
+find_dependency(protobuf CONFIG REQUIRED)
+find_dependency(carbon-pdm CONFIG REQUIRED)
+
 # This file is generated automatically by cmake as part of the install step
 include(${CMAKE_CURRENT_LIST_DIR}/carbon-pdmprotowrapper.cmake)
 
@@ -34,6 +37,3 @@ include(${CMAKE_CURRENT_LIST_DIR}/carbon-pdmprotowrapper.cmake)
 # find_dependency(b CONFIG NO_CMAKE_PATH REQUIRED)
 # find_dependency(c CONFIG NO_CMAKE_PATH REQUIRED)
 #
-
-find_dependency(protobuf CONFIG REQUIRED)
-find_dependency(carbon-pdm CONFIG REQUIRED)
